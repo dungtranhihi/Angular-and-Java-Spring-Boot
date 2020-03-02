@@ -1,0 +1,8 @@
+body{
+    background: -webkit-linear-gradient(#f3dab8ec, #8f4b13); /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(#f3dab8ec, #8f4b13 ); /* Opera 11.1+ */
+    background: -moz-linear-gradient(#f3dab8ec, #8f4b13 ); /* Firefox 3.6+ */
+    background: linear-gradient(#f3dab8ec , #8f4b13 ); /* Standard syntax (must be last) */
+    background-color: #f3dab8ec; /* Bạn nên đặt màu nền phòng trường hợp không tải được màu nền đậm/nhạt dần*/
+}
+

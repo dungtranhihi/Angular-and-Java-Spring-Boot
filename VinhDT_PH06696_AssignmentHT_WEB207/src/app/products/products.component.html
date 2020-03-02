@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <app-slide-anh></app-slide-anh>
+
+
+<div style="border: 2px black double;margin-top:10px; background-color: rgb(19, 17, 17);  ">
+  <h3 style="color: white"><strong>Danh sách sản phẩm</strong></h3>
+</div>
+
+<div class="row" style="margin-top:30px;padding-left: 40px;padding-right: 40px;padding-top: 20px">
+  <div class="col-sm-3" style="margin-bottom: 30px" *ngFor="let product of products">
+    <div class="card" style="width:93,3%">
+      <img [src]="product.img" class="card-img-top" alt="Hoa qua !!" width="300px" height="300px">
+      <div class="card-body">
+        <h5 class="card-title">{{product.name}}</h5>
+        <p class="card-text">{{product.desc}}</p>
+        <hr>
+        <p class="card-text">trang thai: {{product.status}}</p>
+        <hr>
+        <p class="card-text" style="color: rgb(245, 6, 6);">Giá tiền: {{product.price}} đồng/kg</p>
+        <button type="button" class="btn btn-primary" routerLink="/products/{{product.id}}">View</button>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <app-footer></app-footer>
+  <div>

@@ -1,0 +1,32 @@
+.div-all{
+    width: 100%;
+    height: auto;
+
+}
+.div-right{
+    width: 400px;
+    height: 600px;
+    background-color:rgb(41, 37, 37);
+    float:right;
+    margin-right: 15px
+}
+.div1{
+    width:380px;
+    height: 280px;
+    background-color: aliceblue;
+    margin-left:10px;
+}
+.div2{
+    width:380px;
+    height: 284px;
+    background-color: aliceblue;
+    margin-left:10px;
+}
+.div-left{
+    width:850px;
+    height: 600px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: rgb(236, 232, 232);
+    
+}

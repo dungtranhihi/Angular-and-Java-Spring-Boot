@@ -1,0 +1,59 @@
+<div class="container-fluid">
+    <app-slide-anh></app-slide-anh>
+
+
+    <br>
+    <h3 style="text-align: center; margin-top: 30px; color: red"><strong>Sửa sản phẩm</strong></h3>
+    <br>
+    <div *ngIf='product'>
+
+        <form>
+            <table align="center">
+                <tr>
+                    <td><strong> Mã sản phẩm: </strong></td>
+                    <td><input type="text" name='productId' [(ngModel)]='product.id' readonly size="50" style="margin-left: 50px"></td>
+                </tr>
+                <tr>
+                    <td><strong> Tên sản phẩm :</strong></td>
+                    <td>
+                        <input type="text" name='productName' [(ngModel)]='product.name' size="50" style="margin-left: 50px">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <strong>Giá tiền :</strong></td>
+                    <td> <input type="text" name='productPrice' [(ngModel)]='product.price' size="50" style="margin-left: 50px"></td>
+                </tr>
+                <tr>
+                    <td><strong> Trạng thái :</strong></td>
+                    <td> <input type="text" name='productStatus' [(ngModel)]='product.status' size="50" style="margin-left: 50px"></td>
+                </tr>
+                <tr>
+                    <td><strong> Mô tả :</strong></td>
+                    <td><textarea name='productDesc' [(ngModel)]='product.desc' cols="51" rows="5" style="margin-left: 50px"></textarea></td>
+                </tr>
+                <tr>
+                        <td><strong> Ảnh :</strong></td>
+                        <td><textarea name='productImg' [(ngModel)]='product.img' cols="51" rows="5" style="margin-left: 50px"></textarea></td>
+                    </tr>
+                <tr>                  
+                    <td></td>
+                    <td><button type="button" class="btn btn-primary" (click)='saveProduct(product)'
+                            style="float:right ">Save</button></td>
+                </tr>
+
+
+
+            </table>
+        </form>
+
+
+
+    </div>
+
+
+
+
+
+    <app-footer></app-footer>
+    <div>

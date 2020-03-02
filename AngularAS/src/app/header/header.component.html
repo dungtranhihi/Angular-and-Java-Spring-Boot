@@ -1,0 +1,47 @@
+<div class="header" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" routerLink='/home'>Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink='/product'>Sản Phẩm<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink='/cart'>Xem Giỏ Hàng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink='/manage'>Quản Lý Sản Phẩm</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink='/login' tabindex="-1" aria-disabled="true">Đăng nhập</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                </form>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Xin chào: 
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" routerLink='/account'>Tài khoản của bạn</a>
+                          <a class="dropdown-item" routerLink='/cart'>Giỏ hàng của bạn</a>  
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink='/logout'>Đăng xuất</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+    </nav>
+</div>

@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <app-slide-anh></app-slide-anh>
+
+
+  <br>
+  <h3 style="text-align: center; margin-top: 30px; color: red"><strong>Chi tiết sản phẩm</strong></h3>
+  <br>
+  <div class="row">
+    <div class="col-md-6" *ngIf="product">
+      <div style="width:auto;height: auto;border: black 0px double;"><img [src]="product.img"></div>
+    </div>
+    <div class="col-md-6">
+      <div *ngIf='product'>
+        <form>
+          <table align="center">
+            <tr>
+              <td><strong> Mã sản phẩm : {{product.id}}</strong></td>
+
+            </tr>
+            <tr>
+              <td><strong> Tên sản phẩm : {{product.name}}</strong></td>
+
+            </tr>
+
+            <tr>
+              <td> <strong>Giá tiền : {{product.price}} đồng</strong></td>
+
+            </tr>
+            <tr>
+              <td><strong> Trạng thái : {{product.status}}</strong></td>
+
+            </tr>
+            <tr>
+              <td><strong> Mô tả sản phẩm : {{product.desc}}</strong></td>
+
+            </tr>
+            <tr>
+
+              <td><button type="button" class="btn btn-primary" style="margin-right: 10px">Add to Card</button>
+                <button type="button" class="btn btn-primary" routerLink="/products">Back</button></td>
+            </tr>
+
+
+
+          </table>
+        </form>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+  <app-footer></app-footer>
+  <div>

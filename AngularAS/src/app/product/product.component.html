@@ -1,0 +1,28 @@
+<div class="bodyprod">
+    <h1> <span class="badge badge-secondary">Sản phẩm chính</span></h1>
+    
+    <div class="row pdtop">
+
+        <div class="col-md-4" *ngFor="let product of products">
+            
+                <form>  
+            <div class="card mb-4 shadow-sm" >
+                <img   src="{{product.img}}" >
+                <div class="card-body">
+                    <p class="card-text">{{product.name}} </p> 
+                    <p class="card-text" style="height: 20px;">Số lượng: {{product.quanlity}}</p>
+                    <p class="card-text" style="height: 20px;">Giá: {{product.price}}<span class="badge badge-success"></span></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Xem</button>
+                            <button type="submit" class="btn btn-sm btn-outline-secondary" name="btAddCart" value="addCart">Đặt Hàng Ngay</button>
+                        </div>
+                        <small class="text-muted">{{product.status ? 'Còn Hàng':'Hết Hàng'}}</small> 
+                    </div>
+                </div>
+            </div>
+                        </form>
+        </div> 
+      
+    </div>
+</div>

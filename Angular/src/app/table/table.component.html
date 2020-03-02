@@ -1,0 +1,28 @@
+<div>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tên sản phẩm</th>
+            <th scope="col">Giá</th>
+            <th scope="col">Số lượng</th>
+            <th scope="col">Lựa chọn</th>
+        </tr>
+    </thead>
+    <tbody>
+                    <tr *ngFor="let product of products">
+                        <th scope="col">#</th>
+                        <td scope="col">{{product.name}}</td>
+                        <td scope="col">{{product.price}}</td>
+                        <td scope="col">{{product.quanlity}}</td>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" (click)="Remove(product.id)">Remove</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" (click)="Detail(product)">Detail</button>
+                    </tr>
+    </tbody>
+</table>
+
+<div  *ngIf="SelectedDetail">
+    <app-product-detail [data]="SelectedDetail" > </app-product-detail>
+</div>
+
+</div>
